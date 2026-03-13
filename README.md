@@ -19,8 +19,6 @@
 - I’m looking to collaborate on **Web3 products and Backend development**
 - Ask me about **Solidity, Node.js, and Databases**
 - How to reach me: **arpitrajeshdoshi@gmail.com**
-- Fun fact: **[Insert a fun fact or hobby here]**
-
 ---
 
 ### Languages & Tech Stack
@@ -50,6 +48,4 @@
 
 
 <p align="center">
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://twitter.com/YOUR_TWITTER_USERNAME"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
-</p>
+  <a href="https://linkedin.com/in/arpitrajeshdoshi"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
