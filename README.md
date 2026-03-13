@@ -3,7 +3,7 @@
 <!-- Typing Animation -->
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Web3+Developer;Backend+Engineer;Smart+Contract+Enthusiast;Open+Source+Contributor" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=500&lines=Web3+Developer;Backend+Engineer;Smart+Contract+Developer" alt="Typing SVG" />
   </a>
 </p>
 
@@ -15,11 +15,10 @@
 
 ### About Me
 
-- I’m currently working on **[Insert Current Project / DApp]**
-- I’m currently learning **[e.g., Rust, Zero-Knowledge Proofs, System Design]**
-- I’m looking to collaborate on **Web3 products and Open Source Backend tools**
+- I’m currently learning **System Design, Backend Development**
+- I’m looking to collaborate on **Web3 products and Backend development**
 - Ask me about **Solidity, Node.js, and Databases**
-- How to reach me: **[Your Email or LinkedIn link]**
+- How to reach me: **arpitrajeshdoshi@gmail.com**
 - Fun fact: **[Insert a fun fact or hobby here]**
 
 ---
@@ -35,7 +34,7 @@
 **Backend & Web3**
 <br>
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,graphql,ipfs" alt="Backend and Web3" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,ipfs" alt="Backend and Web3" />
 </a>
 <!-- If you use specific Web3 tools not in skillicons, you can use these custom badges: -->
 <br>
@@ -49,17 +48,6 @@
 
 ---
 
-### GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
----
 
 <p align="center">
   <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
