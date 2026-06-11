@@ -1,7 +1,7 @@
 ```aura width=860 height=200
  <div style={{
  width: '100%', height: '100%', background: '#08080c',
- display: 'flex', alignItems: 'center', fontFamily: 'Inter',
+ display: 'flex', alignItems: 'center', fontFamily: 'Manrope',
  position: 'relative', overflow: 'hidden', borderRadius: 16,
  border: '1px solid rgba(110,80,220,0.18)'
 }}>
@@ -97,22 +97,11 @@
  </svg>
 
  <div style={{ display:'flex', flexDirection:'column', marginLeft:64, gap:8, zIndex: 10 }}>
-   <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
-     Arpit Doshi
+   <div style={{ display:'flex', fontSize:38, fontWeight:400, color:'#ffffff', letterSpacing:'-1px', lineHeight:1, fontFamily: 'Bebas Neue' }}>
+     Arpit Rajesh Doshi
    </div>
    <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
      Systems Software Engineer · Backend & Data Engineer · Web3 Developer
-   </div>
-   <div style={{ display:'flex', gap:8, marginTop:6 }}>
-     {['C++', 'Python', 'TypeScript', 'Solidity'].map(function(tag) {
-       return (
-         <div key={tag} style={{
-           display:'flex', padding:'4px 12px', borderRadius:20,
-           background:'rgba(80,40,220,0.18)', border:'1px solid rgba(100,70,240,0.32)',
-           color:'rgba(205,195,255,0.85)', fontSize:12, fontWeight:600,
-         }}>{tag}</div>
-       );
-     })}
    </div>
  </div>
 </div>
@@ -131,7 +120,7 @@
      width: '100%', height: '100%',
      background: '#08080c',
      display: 'flex', alignItems: 'center', justifyContent: 'center',
-     fontFamily: 'Inter', borderRadius: 16,
+     fontFamily: 'Manrope', borderRadius: 16,
      border: '1px solid rgba(110,80,220,0.18)',
      position: 'relative', overflow: 'hidden',
    }}>
@@ -229,73 +218,7 @@
 
 
 
-```aura width=860 height=180
-(function() {
-  var aboutItems = [
-    { icon: '🔭', text: "I'm currently learning Systems Programming, Low-Latency Architecture, and Concurrency" },
-    { icon: '🤝', text: "I'm looking to collaborate on High-Performance Backend Systems, Tooling, and Web3 Protocols" },
-    { icon: '💬', text: "Ask me about C++, Python, Solidity, and System Orchestration" },
-    { icon: '✉️', text: "How to reach me: arpitrajeshdoshi@gmail.com" },
-  ];
 
-  return (
-    <div style={{
-      width: '100%', height: '100%',
-      background: '#08080c',
-      display: 'flex', flexDirection: 'column',
-      fontFamily: 'Inter', padding: '24px 32px', gap: 14,
-      borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
-      position: 'relative', overflow: 'hidden',
-    }}>
-      <style>
-        {`
-          @keyframes float-slow {
-            0%, 100% { transform: translateX(0px); opacity: 0.8; }
-            50% { transform: translateX(350px); opacity: 1.2; }
-          }
-          @keyframes float-medium {
-            0%, 100% { transform: translateX(0px); opacity: 0.7; }
-            50% { transform: translateX(-250px); opacity: 1.1; }
-          }
-          #glow-1 { animation: float-slow 9s ease-in-out infinite; }
-          #glow-2 { animation: float-medium 12s ease-in-out infinite reverse; }
-        `}
-      </style>
-      <svg width="860" height="180" style={{ position: 'absolute', top: 0, left: 0 }}>
-        <defs>
-          <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="rgba(0,180,255,0.25)" />
-            <stop offset="70%" stopColor="rgba(0,180,255,0)" />
-          </radialGradient>
-          <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="rgba(115,20,215,0.4)" />
-            <stop offset="70%" stopColor="rgba(115,20,215,0)" />
-          </radialGradient>
-        </defs>
-        <ellipse id="glow-1" cx="200" cy="90" rx="200" ry="150" fill="url(#g1)" />
-        <ellipse id="glow-2" cx="660" cy="90" rx="200" ry="150" fill="url(#g2)" />
-      </svg>
-      
-      <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'3px', marginBottom: 4 }}>
-        ABOUT ME
-      </div>
-      
-      <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
-        {aboutItems.map(function(item, i) {
-          return (
-            <div key={i} style={{ display:'flex', alignItems:'center', gap:12 }}>
-              <div style={{ display:'flex', fontSize:18 }}>{item.icon}</div>
-              <div style={{ display:'flex', fontSize:14, color:'rgba(225,220,255,0.85)', fontWeight:500 }}>{item.text}</div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-})()
-```
-
-<br>
 
 
 
@@ -335,7 +258,7 @@
       width: '100%', height: '100%',
       background: '#08080c',
       display: 'flex', flexDirection: 'column',
-      fontFamily: 'Inter', padding: '18px 32px', gap: 14,
+      fontFamily: 'Manrope', padding: '18px 32px', gap: 14,
       borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
       position: 'relative', overflow: 'hidden',
     }}>
@@ -420,8 +343,8 @@
       <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
         {categories.map(function(cat) {
           return (
-            <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:16 }}>
-              <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:130, minWidth:130 }}>
+            <div key={cat.title} style={{ display:'flex', alignItems:'flex-start', gap:16 }}>
+              <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:130, minWidth:130, marginTop:14 }}>
                 {cat.title.toUpperCase()}
               </div>
               <div style={{ display:'flex', flexWrap:'wrap', gap:7, alignItems:'center' }}>
@@ -470,7 +393,7 @@
       width: '100%', height: '100%',
       background: '#08080c',
       display: 'flex', flexDirection: 'column',
-      fontFamily: 'Inter', padding: '24px 32px', gap: 14,
+      fontFamily: 'Manrope', padding: '24px 32px', gap: 14,
       borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
       position: 'relative', overflow: 'hidden',
     }}>
@@ -526,7 +449,65 @@
 <br>
 
 <p align="center">
-  <a href="https://linkedin.com/in/arpitrajeshdoshi"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://linkedin.com/in/arpitrajeshdoshi">
+```aura width=130 height=45
+(function() {
+  return (
+    <div style={{
+      width: '100%', height: '100%', background: '#000000',
+      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+      fontFamily: 'Manrope', borderRadius: 30, border: '1px solid rgba(0, 119, 181, 0.8)',
+      position: 'relative', overflow: 'hidden'
+    }}>
+      <svg width="100%" height="100%" style={{ position: 'absolute', top: 0, left: 0 }}>
+        <defs>
+          <radialGradient id="g-in" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="rgba(0,119,181,0.5)" />
+            <stop offset="100%" stopColor="rgba(0,119,181,0)" />
+          </radialGradient>
+        </defs>
+        <ellipse cx="20%" cy="50%" rx="60%" ry="80%" fill="url(#g-in)" />
+        <ellipse cx="80%" cy="50%" rx="60%" ry="80%" fill="url(#g-in)" />
+      </svg>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 10 }}>
+        <img src="https://skillicons.dev/icons?i=linkedin" width={20} height={20} style={{ borderRadius: 4 }} />
+        <div style={{ color: '#ffffff', fontSize: 14, fontWeight: 700, letterSpacing: '0.5px' }}>LinkedIn</div>
+      </div>
+    </div>
+  );
+})()
+```
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:arpitrajeshdoshi@gmail.com">
+```aura width=120 height=45
+(function() {
+  return (
+    <div style={{
+      width: '100%', height: '100%', background: '#000000',
+      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+      fontFamily: 'Manrope', borderRadius: 30, border: '1px solid rgba(234, 67, 53, 0.8)',
+      position: 'relative', overflow: 'hidden'
+    }}>
+      <svg width="100%" height="100%" style={{ position: 'absolute', top: 0, left: 0 }}>
+        <defs>
+          <radialGradient id="g-mail" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="rgba(234,67,53,0.5)" />
+            <stop offset="100%" stopColor="rgba(234,67,53,0)" />
+          </radialGradient>
+        </defs>
+        <ellipse cx="20%" cy="50%" rx="60%" ry="80%" fill="url(#g-mail)" />
+        <ellipse cx="80%" cy="50%" rx="60%" ry="80%" fill="url(#g-mail)" />
+      </svg>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 10 }}>
+        <img src="https://skillicons.dev/icons?i=gmail" width={20} height={20} style={{ borderRadius: 4 }} />
+        <div style={{ color: '#ffffff', fontSize: 14, fontWeight: 700, letterSpacing: '0.5px' }}>Email</div>
+      </div>
+    </div>
+  );
+})()
+```
+  </a>
 </p>
 
 <br>
