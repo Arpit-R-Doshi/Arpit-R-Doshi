@@ -236,10 +236,7 @@
   </a>
 </p>
 
-<p align="center">
-  Building high-performance backend architectures, low-latency financial systems, and secure decentralized protocols. Welcome to my GitHub!
-</p>
-<br>
+
 
 ```aura width=860 height=180
 (function() {
@@ -309,12 +306,7 @@
 
 <br>
 
-### Featured Projects 🚀
 
-- **[LOB-Sim](https://github.com/Arpit-R-Doshi/LOB-Sim)**: A deterministic matching engine built in C++20 executing order matching with price-time (FIFO) priority. Features a custom vector-backed Object Pool allocator to bypass runtime dynamic heap allocations.
-- **[DeFi Risk Simulation Lab](https://github.com/Arpit-R-Doshi/DeFi-Simulation-Lab)**: An agent-based simulation engine (Mesa ABM) modeling 7 DeFi archetypes executing adversarial strategies to surface liquidity and oracle risks, with real-time streaming via FastAPI WebSockets.
-
-<br>
 
 ```aura width=860 height=260
 (function() {
