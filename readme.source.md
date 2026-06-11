@@ -33,6 +33,19 @@
        0%, 100% { transform: scale(1); opacity: 0.8; }
        50% { transform: scale(1.3); opacity: 0.4; }
      }
+     @keyframes fire-glow {
+       0%, 100% { transform: scale(1); opacity: 0.7; }
+       50% { transform: scale(1.15); opacity: 1.0; }
+     }
+     @keyframes fire-flicker {
+       0%, 100% { transform: translateY(0px) scale(1); opacity: 0.6; }
+       33% { transform: translateY(-8px) scale(1.05); opacity: 0.9; }
+       66% { transform: translateY(4px) scale(0.95); opacity: 0.5; }
+     }
+     @keyframes float-char {
+       0%, 100% { transform: translateY(0px); }
+       50% { transform: translateY(-8px); }
+     }
      #glow-1 { animation: float-slow 8s ease-in-out infinite; }
      #glow-2 { animation: float-medium 12s ease-in-out infinite; }
      #glow-3 { animation: float-fast 9s ease-in-out infinite; }
@@ -41,6 +54,10 @@
      #glow-6 { animation: float-diagonal 10s ease-in-out infinite; }
      #glow-7 { animation: float-wave 13s ease-in-out infinite; }
      #glow-8 { animation: float-pulse 7s ease-in-out infinite; }
+     #fire-bg-1 { animation: fire-glow 4s ease-in-out infinite; }
+     #fire-bg-2 { animation: fire-flicker 3s ease-in-out infinite; }
+     #fire-bg-3 { animation: fire-flicker 5s ease-in-out infinite reverse; }
+     #char-img { animation: float-char 6s ease-in-out infinite; }
    `}
  </style>
 
@@ -84,6 +101,16 @@
        <stop offset="50%" stopColor="rgba(0,130,220,0.15)" />
        <stop offset="70%" stopColor="rgba(0,130,220,0)" />
      </radialGradient>
+     <radialGradient id="fire1" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(255,100,0,0.6)" />
+       <stop offset="40%" stopColor="rgba(255,50,0,0.2)" />
+       <stop offset="70%" stopColor="rgba(255,0,0,0)" />
+     </radialGradient>
+     <radialGradient id="fire2" cx="50%" cy="50%" r="50%">
+       <stop offset="0%" stopColor="rgba(255,180,0,0.5)" />
+       <stop offset="40%" stopColor="rgba(255,80,0,0.15)" />
+       <stop offset="70%" stopColor="rgba(255,0,0,0)" />
+     </radialGradient>
    </defs>
 
    <ellipse id="glow-1" cx="180" cy="230" rx="260" ry="190" fill="url(#g1)" />
@@ -94,6 +121,12 @@
    <ellipse id="glow-6" cx="300" cy="240" rx="180" ry="140" fill="url(#g6)" />
    <ellipse id="glow-7" cx="490" cy="230" rx="220" ry="170" fill="url(#g7)" />
    <ellipse id="glow-8" cx="590" cy="250" rx="150" ry="130" fill="url(#g8)" />
+   
+   <ellipse id="fire-bg-1" cx="740" cy="100" rx="220" ry="220" fill="url(#fire1)" />
+   <ellipse id="fire-bg-2" cx="680" cy="140" rx="180" ry="180" fill="url(#fire2)" />
+   <ellipse id="fire-bg-3" cx="800" cy="80" rx="160" ry="160" fill="url(#fire1)" />
+   
+   <image id="char-img" href="https://raw.githubusercontent.com/Arpit-R-Doshi/Arpit-R-Doshi/main/Kyojuro_anime.webp" x="600" y="-10" width="220" height="220" preserveAspectRatio="xMidYMid slice" />
  </svg>
 
  <div style={{ display:'flex', flexDirection:'column', marginLeft:64, gap:8, zIndex: 10 }}>
