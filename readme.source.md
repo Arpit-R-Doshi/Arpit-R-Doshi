@@ -456,7 +456,7 @@
                     })}
                     {cat.badges.map(function(b) {
                       return (
-                        <img key={b.name} src={'https://img.shields.io/badge/' + b.name + '-' + b.color + '?style=for-the-badge&logo=' + b.logo + '&logoColor=' + b.logoColor} height={28} style={{ borderRadius: 4, marginLeft: 4 }} />
+                        <img key={b.name} src={'https://img.shields.io/badge/' + b.name + '-' + b.color + '?style=for-the-badge&logo=' + b.logo + '&logoColor=' + b.logoColor} width={120} height={28} style={{ borderRadius: 4, marginLeft: 4 }} />
                       );
                     })}
                   </div>
