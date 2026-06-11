@@ -350,8 +350,8 @@
   var achievements = [
     { icon: '🥇', title: 'First Prize', desc: 'IIT Delhi Yellow x BizThon ($5000) as a Smart Contract Developer.' },
     { icon: '🥈', title: 'Runner Up', desc: 'HackSync 2 (Blockchain domain) TSEC, as a Smart Contract & Backend Developer.' },
-    { icon: '🥉', title: 'Second Runner Up', desc: 'CSI SPIT Hackathon\\'26 (Rs. 25,000) as a Blockchain Developer.' },
-    { icon: '🥈', title: 'Runner Up', desc: 'SIES Bytecamp\\'26 (Rs. 30,000) as a Blockchain and Backend Developer.' },
+    { icon: '🥉', title: 'Second Runner Up', desc: "CSI SPIT Hackathon'26 (Rs. 25,000) as a Blockchain Developer." },
+    { icon: '🥈', title: 'Runner Up', desc: "SIES Bytecamp'26 (Rs. 30,000) as a Blockchain and Backend Developer." },
   ];
 
   return (
