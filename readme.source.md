@@ -345,6 +345,73 @@
 })()
 ```
 
+```aura width=860 height=200
+(function() {
+  var achievements = [
+    { icon: '🥇', title: 'First Prize', desc: 'IIT Delhi Yellow x BizThon ($5000) as a Smart Contract Developer.' },
+    { icon: '🥈', title: 'Runner Up', desc: 'HackSync 2 (Blockchain domain) TSEC, as a Smart Contract & Backend Developer.' },
+    { icon: '🥉', title: 'Second Runner Up', desc: 'CSI SPIT Hackathon\\'26 (Rs. 25,000) as a Blockchain Developer.' },
+    { icon: '🥈', title: 'Runner Up', desc: 'SIES Bytecamp\\'26 (Rs. 30,000) as a Blockchain and Backend Developer.' },
+  ];
+
+  return (
+    <div style={{
+      width: '100%', height: '100%',
+      background: '#08080c',
+      display: 'flex', flexDirection: 'column',
+      fontFamily: 'Inter', padding: '24px 32px', gap: 14,
+      borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
+      position: 'relative', overflow: 'hidden',
+    }}>
+      <style>
+        {\`
+          @keyframes float-slow {
+            0%, 100% { transform: translateX(0px); opacity: 0.8; }
+            50% { transform: translateX(350px); opacity: 1.2; }
+          }
+          @keyframes float-medium {
+            0%, 100% { transform: translateX(0px); opacity: 0.7; }
+            50% { transform: translateX(-250px); opacity: 1.1; }
+          }
+          #glow-1 { animation: float-slow 9s ease-in-out infinite; }
+          #glow-2 { animation: float-medium 12s ease-in-out infinite reverse; }
+        \`}
+      </style>
+      <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+        <defs>
+          <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="rgba(255,180,0,0.25)" />
+            <stop offset="70%" stopColor="rgba(255,180,0,0)" />
+          </radialGradient>
+          <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="rgba(115,20,215,0.4)" />
+            <stop offset="70%" stopColor="rgba(115,20,215,0)" />
+          </radialGradient>
+        </defs>
+        <ellipse id="glow-1" cx="200" cy="100" rx="200" ry="150" fill="url(#g1)" />
+        <ellipse id="glow-2" cx="660" cy="100" rx="200" ry="150" fill="url(#g2)" />
+      </svg>
+      
+      <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'3px', marginBottom: 4 }}>
+        RECENT WINS & ACHIEVEMENTS
+      </div>
+      
+      <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+        {achievements.map(function(ach, i) {
+          return (
+            <div key={i} style={{ display:'flex', alignItems:'center', gap:12 }}>
+              <div style={{ display:'flex', fontSize:20 }}>{ach.icon}</div>
+              <div style={{ display:'flex', fontSize:14, color:'#ffffff', fontWeight:600 }}>{ach.title}</div>
+              <div style={{ display:'flex', fontSize:14, color:'rgba(225,220,255,0.7)' }}>- {ach.desc}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+})()
+```
+
 <br>
 <h1 align="center">Hi there, I'm Arpit Doshi.</h1>
 
@@ -375,16 +442,7 @@
 - **[LOB-Sim](https://github.com/Arpit-R-Doshi/LOB-Sim)**: A deterministic matching engine built in C++20 executing order matching with price-time (FIFO) priority. Features a custom vector-backed Object Pool allocator to bypass runtime dynamic heap allocations.
 - **[DeFi Risk Simulation Lab](https://github.com/Arpit-R-Doshi/DeFi-Simulation-Lab)**: An agent-based simulation engine (Mesa ABM) modeling 7 DeFi archetypes executing adversarial strategies to surface liquidity and oracle risks, with real-time streaming via FastAPI WebSockets.
 
----
 
-### Recent Wins & Achievements 🏆
-
-- 🥇 **First Prize** - IIT Delhi Yellow x BizThon (\$5000) as a Smart Contract Developer.
-- 🥈 **Runner Up** - HackSync 2 (Blockchain domain) TSEC, as a Smart Contract & Backend Developer.
-- 🥉 **Second Runner Up** - CSI SPIT Hackathon'26 (Rs. 25,000) as a Blockchain Developer.
-- 🥈 **Runner Up** - SIES Bytecamp'26 (Rs. 30,000) as a Blockchain and Backend Developer.
-
----
 
 ### Languages & Tech Stack 🛠️
 
