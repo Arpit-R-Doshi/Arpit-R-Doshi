@@ -228,10 +228,11 @@
 
 ```aura width=860 height=168
 (function() {
-  var topLangs = ['C++', 'Python', 'TypeScript', 'JavaScript', 'Solidity', 'Java', 'PostgreSQL'];
+  var langs = ['cpp', 'py', 'ts', 'js', 'solidity', 'java', 'postgres'];
+  var frameworks = ['nextjs', 'react', 'nodejs', 'express', 'fastapi'];
   var categories = [
-    { title: 'Languages', color: '#a78bfa', items: topLangs },
-    { title: 'Frameworks', color: '#60a5fa', items: ['Next.js', 'React', 'Node.js', 'Express', 'FastAPI'] },
+    { title: 'Languages', color: '#a78bfa', items: langs },
+    { title: 'Frameworks', color: '#60a5fa', items: frameworks },
   ];
 
  return (
@@ -331,11 +332,7 @@
              <div style={{ display:'flex', flexWrap:'wrap', gap:7 }}>
                {cat.items.map(function(item) {
                  return (
-                   <div key={item} style={{
-                     display:'flex', padding:'4px 13px', borderRadius:6,
-                     background:cat.color + '15', border:'1px solid ' + cat.color + '35',
-                     color:'rgba(225,220,255,0.85)', fontSize:12, fontWeight:600,
-                   }}>{item}</div>
+                   <img key={item} src={'https://skillicons.dev/icons?i=' + item} width={40} height={40} style={{ borderRadius: 8 }} />
                  );
                })}
              </div>
