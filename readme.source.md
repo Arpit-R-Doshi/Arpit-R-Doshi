@@ -226,15 +226,6 @@
 })()
 ```
 
-<br>
-<h1 align="center">Hi there, I'm Arpit Doshi.</h1>
-
-<!-- Typing Animation -->
-<p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF41&center=true&vCenter=true&width=500&lines=Systems+Software+Engineer;Backend+%26+Data+Engineer;Web3+%26+Smart+Contract+Developer" alt="Typing SVG" />
-  </a>
-</p>
 
 
 
@@ -430,7 +421,7 @@
         {categories.map(function(cat) {
           return (
             <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:16 }}>
-              <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:100 }}>
+              <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:130, minWidth:130 }}>
                 {cat.title.toUpperCase()}
               </div>
               <div style={{ display:'flex', flexWrap:'wrap', gap:7, alignItems:'center' }}>
