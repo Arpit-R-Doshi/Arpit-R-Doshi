@@ -97,7 +97,7 @@
  </svg>
 
  <div style={{ display:'flex', flexDirection:'column', marginLeft:64, gap:8, zIndex: 10 }}>
-   <div style={{ display:'flex', fontSize:38, fontWeight:400, color:'#ffffff', letterSpacing:'-1px', lineHeight:1, fontFamily: '"Bebas Neue"' }}>
+   <div style={{ display:'flex', fontSize:54, fontWeight:400, color:'#ffffff', letterSpacing:'-1px', lineHeight:1, fontFamily: '"Bebas Neue"' }}>
      Arpit Rajesh Doshi
    </div>
    <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
@@ -112,7 +112,7 @@
  var stats = [
    { label: 'Repos', value: String((github && github.stats && github.stats.totalRepos) || 0), color: '#a78bfa' },
    { label: 'Stars', value: String((github && github.stats && github.stats.totalStars) || 0), color: '#60a5fa' },
-   { label: 'Contributions', value: "215", color: '#f59e0b' },
+   { label: 'Contributions', value: String((github && github.stats && (github.stats.totalContributions || github.stats.contributions || github.stats.totalCommits)) || 0), color: '#f59e0b' },
  ];
 
  return (
@@ -450,7 +450,7 @@
 
 <div align="center">
   
-```aura width=130 height=45 link="https://linkedin.com/in/arpitrajeshdoshi"
+```aura width=130 height=45 inline=true link="https://linkedin.com/in/arpitrajeshdoshi"
 (function() {
   return (
     <div style={{
@@ -477,8 +477,8 @@
   );
 })()
 ```
-&nbsp;&nbsp;
-```aura width=120 height=45 link="mailto:arpitrajeshdoshi@gmail.com"
+
+```aura width=120 height=45 inline=true link="mailto:arpitrajeshdoshi@gmail.com"
 (function() {
   return (
     <div style={{
