@@ -21,3 +21,4 @@ jobs:
         uses: collectioneur/readme-aura@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          fonts_dir: ./fonts

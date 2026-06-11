@@ -97,7 +97,7 @@
  </svg>
 
  <div style={{ display:'flex', flexDirection:'column', marginLeft:64, gap:8, zIndex: 10 }}>
-   <div style={{ display:'flex', fontSize:38, fontWeight:400, color:'#ffffff', letterSpacing:'-1px', lineHeight:1, fontFamily: 'Bebas Neue' }}>
+   <div style={{ display:'flex', fontSize:38, fontWeight:400, color:'#ffffff', letterSpacing:'-1px', lineHeight:1, fontFamily: '"Bebas Neue"' }}>
      Arpit Rajesh Doshi
    </div>
    <div style={{ display:'flex', fontSize:15, color:'rgba(180,165,255,0.8)', fontWeight:400, letterSpacing:'0.3px' }}>
@@ -449,8 +449,7 @@
 <br>
 
 <p align="center">
-  <a href="https://linkedin.com/in/arpitrajeshdoshi">
-```aura width=130 height=45
+```aura width=130 height=45 link="https://linkedin.com/in/arpitrajeshdoshi"
 (function() {
   return (
     <div style={{
@@ -470,17 +469,15 @@
         <ellipse cx="80%" cy="50%" rx="60%" ry="80%" fill="url(#g-in)" />
       </svg>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 10 }}>
-        <img src="https://skillicons.dev/icons?i=linkedin" width={20} height={20} style={{ borderRadius: 4 }} />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width={20} height={20} />
         <div style={{ color: '#ffffff', fontSize: 14, fontWeight: 700, letterSpacing: '0.5px' }}>LinkedIn</div>
       </div>
     </div>
   );
 })()
 ```
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:arpitrajeshdoshi@gmail.com">
-```aura width=120 height=45
+&nbsp;&nbsp;
+```aura width=120 height=45 link="mailto:arpitrajeshdoshi@gmail.com"
 (function() {
   return (
     <div style={{
@@ -500,14 +497,13 @@
         <ellipse cx="80%" cy="50%" rx="60%" ry="80%" fill="url(#g-mail)" />
       </svg>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, zIndex: 10 }}>
-        <img src="https://skillicons.dev/icons?i=gmail" width={20} height={20} style={{ borderRadius: 4 }} />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width={20} height={20} />
         <div style={{ color: '#ffffff', fontSize: 14, fontWeight: 700, letterSpacing: '0.5px' }}>Email</div>
       </div>
     </div>
   );
 })()
 ```
-  </a>
 </p>
 
 <br>
