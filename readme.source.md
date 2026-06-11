@@ -96,15 +96,7 @@
    <ellipse id="glow-8" cx="590" cy="250" rx="150" ry="130" fill="url(#g8)" />
  </svg>
 
- <div style={{
-   position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-   borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
-   display: 'flex', alignItems: 'center', justifyContent: 'center',
- }}>
-   <img src={'https://github.com/Arpit-R-Doshi.png'} width={88} height={88} style={{ borderRadius: 44 }} />
- </div>
-
- <div style={{ display:'flex', flexDirection:'column', marginLeft:168, gap:8, zIndex: 10 }}>
+ <div style={{ display:'flex', flexDirection:'column', marginLeft:64, gap:8, zIndex: 10 }}>
    <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
      Arpit Doshi
    </div>
