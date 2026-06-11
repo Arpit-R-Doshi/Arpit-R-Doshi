@@ -112,7 +112,7 @@
  var stats = [
    { label: 'Repos', value: String((github && github.stats && github.stats.totalRepos) || 0), color: '#a78bfa' },
    { label: 'Stars', value: String((github && github.stats && github.stats.totalStars) || 0), color: '#60a5fa' },
-   { label: 'Contributions', value: String((github && github.stats && (github.stats.totalContributions || github.stats.contributions || github.stats.totalCommits)) || 0), color: '#f59e0b' },
+   { label: 'Contributions', value: "215", color: '#f59e0b' },
  ];
 
  return (
@@ -450,8 +450,7 @@
 
 <div align="center">
   
-[
-```aura width=130 height=45
+```aura width=130 height=45 link="https://linkedin.com/in/arpitrajeshdoshi"
 (function() {
   return (
     <div style={{
@@ -478,10 +477,8 @@
   );
 })()
 ```
-](https://linkedin.com/in/arpitrajeshdoshi)
 &nbsp;&nbsp;
-[
-```aura width=120 height=45
+```aura width=120 height=45 link="mailto:arpitrajeshdoshi@gmail.com"
 (function() {
   return (
     <div style={{
@@ -508,7 +505,6 @@
   );
 })()
 ```
-](mailto:arpitrajeshdoshi@gmail.com)
 
 </div>
 
