@@ -448,8 +448,10 @@
 
 <br>
 
-<p align="center">
-```aura width=130 height=45 link="https://linkedin.com/in/arpitrajeshdoshi"
+<div align="center">
+  
+[
+```aura width=130 height=45
 (function() {
   return (
     <div style={{
@@ -476,8 +478,10 @@
   );
 })()
 ```
+](https://linkedin.com/in/arpitrajeshdoshi)
 &nbsp;&nbsp;
-```aura width=120 height=45 link="mailto:arpitrajeshdoshi@gmail.com"
+[
+```aura width=120 height=45
 (function() {
   return (
     <div style={{
@@ -504,7 +508,9 @@
   );
 })()
 ```
-</p>
+](mailto:arpitrajeshdoshi@gmail.com)
+
+</div>
 
 <br>
 <p align="center"><sub>𝗉𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 <a href="https://github.com/collectioneur/readme-aura">𝗋𝖾𝖺𝖽𝗆𝖾-𝖺𝗎𝗋𝖺</a></sub></p>
