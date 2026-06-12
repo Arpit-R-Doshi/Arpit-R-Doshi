@@ -175,7 +175,7 @@
  var stats = [
    { label: 'Repos', value: String((github && github.stats && github.stats.totalRepos) || 0), color: '#a78bfa' },
    { label: 'Stars', value: String((github && github.stats && github.stats.totalStars) || 0), color: '#60a5fa' },
-   { label: 'Contributions', value: String((github && github.stats && (github.stats.totalContributions || github.stats.contributions || github.stats.totalCommits)) || 0), color: '#f59e0b' },
+   { label: 'Commits (2026)', value: String('{{COMMITS_2026}}'), color: '#f59e0b' },
  ];
 
  return (

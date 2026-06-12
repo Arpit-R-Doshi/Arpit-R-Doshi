@@ -17,6 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Fetch and inject real-time commits
+        run: |
+          COMMITS=$(curl -s "https://github-readme-stats-fast.vercel.app/api?username=Arpit-R-Doshi&show_icons=true&theme=github_dark" | grep "Total Commits in 2026" | head -n 1 | sed -E 's/.*Total Commits in 2026 *: *([0-9]+).*/\1/')
+          if [ -z "$COMMITS" ]; then COMMITS="0"; fi
+          sed -i "s/{{COMMITS_2026}}/$COMMITS/g" readme.source.md
+
       - name: Generate README
         uses: collectioneur/readme-aura@main
         with:
