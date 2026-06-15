@@ -309,7 +309,7 @@
 
 
 
-```aura width=860 height=260
+```aura width=860 height=210
 (function() {
   var categories = [
     { 
@@ -345,7 +345,7 @@
       width: '100%', height: '100%',
       background: '#08080c',
       display: 'flex', flexDirection: 'column',
-      fontFamily: 'Manrope', padding: '18px 32px', gap: 14,
+      fontFamily: 'Manrope', padding: '32px', gap: 14,
       borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
       position: 'relative', overflow: 'hidden',
     }}>
@@ -410,7 +410,7 @@
         `}
       </style>
 
-      <svg width="860" height="260" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <svg width="860" height="210" style={{ position: 'absolute', top: 0, left: 0 }}>
         <defs>
           <radialGradient id="g1" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stopColor="rgba(115,20,215,0.68)" />
