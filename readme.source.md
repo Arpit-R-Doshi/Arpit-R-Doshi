@@ -448,27 +448,27 @@
         <ellipse id="glow-6" cx="420" cy="138" rx="100" ry="80" fill="url(#g6)" />
       </svg>
 
-      <div style={{ display:'flex', fontSize:10, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'3px' }}>
+      <div style={{ display:'flex', fontSize:14, fontWeight:700, color:'rgba(155,140,210,0.5)', letterSpacing:'2px' }}>
         TECH STACK
       </div>
-      <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
+      <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
         {categories.map(function(cat) {
           return (
-            <div key={cat.title} style={{ display:'flex', alignItems:'flex-start', gap:16 }}>
-              <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:130, minWidth:130, marginTop:14 }}>
+            <div key={cat.title} style={{ display:'flex', alignItems:'flex-start', gap:10 }}>
+              <div style={{ display:'flex', fontSize:12, fontWeight:700, color:cat.color, letterSpacing:'1px', width:130, minWidth:130, marginTop:10 }}>
                 {cat.title.toUpperCase()}
               </div>
-              <div style={{ display:'flex', flexWrap:'wrap', gap:7, alignItems:'center' }}>
+              <div style={{ display:'flex', flexWrap:'wrap', gap:4, alignItems:'center' }}>
                 {cat.type === 'icons' && cat.items.map(function(item) {
                   return (
-                    <img key={item} src={'https://skillicons.dev/icons?i=' + item} width={40} height={40} style={{ borderRadius: 8 }} />
+                    <img key={item} src={'https://skillicons.dev/icons?i=' + item} width={36} height={36} style={{ borderRadius: 8 }} />
                   );
                 })}
                 {cat.type === 'mixed' && (
-                  <div style={{ display:'flex', flexWrap:'wrap', gap:7, alignItems:'center' }}>
+                  <div style={{ display:'flex', flexWrap:'wrap', gap:4, alignItems:'center' }}>
                     {cat.icons.map(function(item) {
                       return (
-                        <img key={item} src={'https://skillicons.dev/icons?i=' + item} width={40} height={40} style={{ borderRadius: 8 }} />
+                        <img key={item} src={'https://skillicons.dev/icons?i=' + item} width={36} height={36} style={{ borderRadius: 8 }} />
                       );
                     })}
                     {cat.badges.map(function(b) {
